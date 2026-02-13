@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendario E</title>
+
+<style>
+        body {
+             margin: 0;
+             font-family: Arial, sans-serif;
+
+        }
+
+        header {
+             background-color: #4CAF50; 
+             color: rgb(255, 255, 255);
+             padding: 30px ;
+             text-align: center;
+             font-size: 24px;
+             font-weight: bold;
+        }
+
+        .menu-container {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             margin: 120px;
+        }
+        
+        .menu-item {
+             background-color: #ffffffaf;
+             border: 2px solid #4CAF50;
+             border-radius: 10px;
+             width: 210px;
+             text-align: center;
+             padding: 25px;
+             
+        }
+
+
+        .menu-item h3 {
+             margin: 10px 0;
+             font-size: 18px;
+             color: #333;
+        }
+
+        .menu-item a {
+             text-decoration: none;
+             color: white;
+             background-color: #4CAF50;
+             padding: 10px 15px;
+             border-radius: 15px;
+             display: inline-block;
+             margin-top: 15px;
+        }
+
+
+        footer {
+             text-align: center;
+             padding: 10px;
+             background-color: #4CAF50;
+             color: white;
+             position: fixed;
+             bottom: 0;
+             width: 100%;
+        }
+
+        body {
+             font-family: Arial, sans-serif;
+             background-image: url('/images.png'); 
+             background-size: cover; 
+             justify-content: center;
+             align-items: center;
+       }
+    /* Estilos para el calendario */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+          body {
+             margin: 0;
+             font-family: Arial, sans-serif;
+
+        }
+        header {
+             background-color: #4CAF50; 
+             color: rgb(255, 255, 255);
+             padding: 30px ;
+             text-align: center;
+             font-size: 24px;
+             font-weight: bold;
+        }
+
+    .calendar {
+      background-color: #f1f1f1;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      width: 400px;
+      text-align: center;
+    }
+
+    h3 {
+      margin-top: 0;
+      font-size: 24px;
+    }
+
+    .calendar table {
+      width: 100%;
+      border-collapse: collapse
+      }
+
+    .calendar th, .calendar td {
+      padding: 10px;
+      width: 30px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .calendar th {
+      background-color: #4caf50;
+      color: white;
+    }
+
+    .calendar td {
+      background-color: #ecf0f1;
+      cursor: pointer;
+    }
+
+    .calendar td:hover {
+      background-color: #4caf50;
+      color: white;
+    }
+        .menu-item a {
+             text-decoration: none;
+             color: white;
+             background-color: #4CAF50;
+             padding: 20px 25px;
+             border-radius: 20px;
+             display: inline-block;
+             margin-top: 15px;
+        }
+
+       footer {
+             text-align: center;
+             padding: 10px;
+             background-color: #4CAF50;
+             color: white;
+             position: fixed;
+             bottom: 0;
+             width: 100%;
+        }
+                body {
+             font-family: Arial, sans-serif;
+             background-image: url('/images.png'); 
+             background-size: cover; 
+             justify-content: center;
+             align-items: center;
+       }
+    </style>
+
+</head>
+<body>
+
+  <div class="calendar">
+    <h3>Calendario  2025</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Dom</th>
+          <th>Lun</th>
+          <th>Mar</th>
+          <th>Mié</th>
+          <th>Jue</th>
+          <th>Vie</th>
+          <th>Sáb</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+          <td>10</td>
+          <td>11</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>14</td>
+          <td>15</td>
+          <td>16</td>
+          <td>17</td>
+          <td>18</td>
+          <td>19</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>21</td>
+          <td>22</td>
+          <td>23</td>
+          <td>24</td>
+          <td>25</td>
+          <td>26</td>
+        </tr>
+        <tr>
+          <td>27</td>
+          <td>28</td>
+          <td>29</td>
+          <td>30</td>
+          <td>31</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+    <div class="menu-container">
+        <div class="menu-item">
+            <a href="{{url_for('pagina4')}}">Siguiente</a>
+
+    </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Instituto Tecnico Industrial Piloto.
+    </footer>
+
+</body>
+</html>
