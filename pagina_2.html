@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú ITIP</title>
+    <style>
+        body {
+             margin: 0;
+             font-family: Arial, sans-serif;
+
+        }
+
+        header {
+             background-color: #4CAF50; 
+             color: rgb(255, 255, 255);
+             padding: 30px ;
+             text-align: center;
+             font-size: 24px;
+             font-weight: bold;
+        }
+
+        .menu-container {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             margin: 120px;
+        }
+        
+        .menu-item {
+             background-color: #ffffffaf;
+             border: 2px solid #4CAF50;
+             border-radius: 10px;
+             width: 210px;
+             text-align: center;
+             padding: 25px;
+             
+        }
+
+
+        .menu-item h3 {
+             margin: 20px 0;
+             font-size: 28px;
+             color: #333;
+        }
+
+        .menu-item a {
+             text-decoration: none;
+             color: white;
+             background-color: #4CAF50;
+             padding: 20px 25px;
+             border-radius: 20px;
+             display: inline-block;
+             margin-top: 15px;
+        }
+
+
+        footer {
+             text-align: center;
+             padding: 10px;
+             background-color: #4CAF50;
+             color: white;
+             position: fixed;
+             bottom: 0;
+             width: 100%;
+        }
+
+        body {
+             font-family: Arial, sans-serif;
+             background-image: url('/images.png'); 
+             background-size: cover; 
+             justify-content: center;
+             align-items: center;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        Menú Principal ITIP
+    </header>
+
+    <div class="menu-container">
+        <div class="menu-item">
+          <img src="{{url_for('static', filename='img/Captura.jpg')}}" class="d-block w-100" alt="Captura">
+            <a href="{{url_for('pagina3')}}">Ingresar</a>
+
+    </div>
+
+    <footer>
+        &copy; 2025 Instituto Tecnico Industrial Piloto.
+    </footer>
+
+</body>
+</html>
