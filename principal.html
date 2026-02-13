@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digiturnos - Gestióna tu turno</title>
+  <style>
+    .hero {
+      height: 100vh;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      width: 100%;
+      z-index: 10;
+    }
+
+    .carousel-item img {
+      height: 100vh;
+      object-fit: cover;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 5;
+    }
+
+    .btn-main {
+      background-color: #00aaff;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1.2em;
+      color: white;
+      border-radius: 6px;
+    }
+
+    .btn-main:hover {
+      background-color: #0077cc;
+    }
+
+    .features {
+      padding: 60px 20px;
+      text-align: center;
+    }
+        * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      font-family: sans-serif;
+    }
+
+    .background-carousel {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+    }
+
+    .background-carousel img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .background-carousel img.active {
+      opacity: 1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      padding-top: 20%;
+      font-size: 2em;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    }
+  </style>
+
+</head>
+<body>
+
+    <div class="hero">
+      <h1 class="display-4">Digiturnos</h1>
+      <p class="lead">La forma más rápida y sencilla de gestionar tus turnos</p>
+          <a href="{{ url_for('pagina1')}}" class="btn btn-main mt-3">Sacar turno</a>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="background-carousel">
+    <img src="/static/img/imagen1.jpg" class="active" alt="Fondo 1">
+  </div>
+
+      <footer class="text-center py-4 bg-light">
+    <p>© 2025 Digiturnos. Todos los derechos reservados.</p>
+  </footer>
